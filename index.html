@@ -12,6 +12,7 @@
     <meta property="og:url" content="https://example.com/">
     <meta property="og:image" content="https://example.com/image/ogp_01.jpg">
     <meta property="og:site_name" content="Kira-Kira Juku">
+    <meta property="og:locale" content="ja_JP">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +30,27 @@
 </head>
 
 <body>
+    <!-- ヘッダー -->
+    <header class="header container">
+        <!-- ロゴ -->
+        <h1 class="logo">
+            <a class="logo__url" href="/"><img class="logo__image" src="assets/image/header_logo_01.svg"
+                    alt="Kira-Kira Juku"></a>
+        </h1>
 
+        <!-- ナビゲーション -->
+        <nav class="navigation humberger-menu">
+            <ul class="hamburger-menu__list">
+                <li class="hamburger-menu__item"><a class="hamburger-menu__link"
+                        href="./index.html#reason">選ばれる3つの理由</a></li>
+                <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="./index.html#course">コース・目的</a>
+                </li>
+                <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="./index.html#price">費 用</a></li>
+                <li class="hamburger-menu__item"><a class="hamburger-menu__link--round" href="/entry">入学説明会に申し込む</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 </body>
 
 </html>
