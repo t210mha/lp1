@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* ---------- ブロックの基底要素 ---------- */
+html {
+    font-size: calc(10 * 100vw / 390);
+}
+
+@media (min-width:768px) {
+    html {
+        font-size: calc(10 * 100vw / 1200);
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #333;
+}
+a {
+    color: #000;
+    text-decoration:none;
+}
+a,
+a:hover {
+    transition: all 0.3s;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
