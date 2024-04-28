@@ -23,6 +23,8 @@
 
         <!-- リセットCSS -->
         <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <!-- Smart Tab -->
         <link href="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/css/smart_tab_all.min.css" rel="stylesheet"
             type="text/css" />
@@ -31,25 +33,27 @@
 
     <body>
         <!-- ヘッダー -->
-        <header class="header container">
+        <header class="header">
             <!-- ロゴ -->
-            <h1 class="logo">
-                <a class="logo__url" href="/"><img class="logo__image" src="assets/image/header_logo_01.svg"
-                        alt="Kira-Kira Juku"></a>
+            <h1 class="header__logo">
+                <a class="header__logo__link" href="/"><img src="assets/image/header_logo_01.svg" alt="Kira-Kira Juku"></a>
             </h1>
 
-            <!-- ナビゲーション -->
-            <nav class="navigation humberger-menu">
-                <ul class="hamburger-menu__list">
-                    <li class="hamburger-menu__item"><a class="hamburger-menu__link"
-                            href="./index.html#reason">選ばれる3つの理由</a></li>
-                    <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="./index.html#course">コース・目的</a>
-                    </li>
-                    <li class="hamburger-menu__item"><a class="hamburger-menu__link" href="./index.html#price">費 用</a></li>
-                    <li class="hamburger-menu__item"><a class="hamburger-menu__link--round" href="/entry">入学説明会に申し込む</a>
-                    </li>
+            <!-- ハンバーガーボタン -->
+            <button type="button" class="header__hamburger-button">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <!-- ナビゲーション、ヘッダーメニュー -->
+            <nav class="header__hamburger-menu">
+                <ul class="header__hamburger-menu__list flex">
+                    <li><a href="/index.html#reason">選ばれる3つの理由</a></li>
+                    <li><a href="/index.html#course">コース・目的</a></li>
+                    <li><a href="/index.html#price">費 用</a></li>
+                    <li><a class="button-apply-meeting" href="/entry">入学説明会に申し込む</a></li>
                 </ul>
             </nav>
+
         </header>
 
         <main>

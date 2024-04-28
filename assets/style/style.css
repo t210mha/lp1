@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* ---------- ブロックの基底要素 ---------- */
 html {
     font-size: calc(10 * 100vw / 390);
@@ -23,21 +24,218 @@ body {
     line-height: 1.75;
     color: #333;
 }
+
 a {
-    color: #000;
-    text-decoration:none;
+    color: #fff;
+    text-decoration: none;
 }
+
 a,
 a:hover {
-    transition: all 0.3s;
+    transition: all .3s;
 }
+
 img {
     max-width: 100%;
     height: auto;
     vertical-align: bottom;
 }
+
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+/* ---------- ヘッダー ---------- */
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 0 .625rem 0 rgb(0 0 0 / 20%);
+}
+
+@media (min-width:768px) {
+    .header {
+        height: 10.1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header {
+        padding: 0  calc((100vw - 120rem) / 2);
+    }
+}
+
+/* ロゴ */
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1.8rem auto 1.8rem 1.6rem;
+    width: 16.6rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    background-color: #fff;
+    line-height: 1;
+}
+
+@media (min-width:768px) {
+    .header__logo {
+        margin: 2.8rem auto 2.8rem 2rem;
+        font-size: 3.2rem;
+    }
+}
+
+/* ハンバーガーボタン */
+.header__hamburger-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 7rem;
+    font-size: 4.6rem;
+    color: #fff;
+    background-color: #005BAC;
+}
+
+@media (min-width: 768px) {
+    .header__hamburger-button {
+        display: none;
+    }
+}
+
+.header__hamburger-button i {
+    line-height: 0;
+}
+
+/* ---------- ハンバーガーメニュー、ヘッダーナビ ---------- */
+@media (max-width: 767px) {
+    .header__hamburger-menu {
+        position: fixed;
+        top: 7rem;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 7rem);
+        background-color: #fff;
+        transition: all 0.6s;
+        transform: translateX(100%);
+    }
+}
+
+@media (min-width: 768px) {
+    .header__hamburger-menu {
+        margin: auto 2rem auto auto;
+    }
+}
+
+/* アクティブ状態 */
+.header__hamburger-menu--active {
+    transform: translateX(0);
+}
+
+/* ナビゲーション */
+@media (max-width: 767px) {
+    .header__hamburger-menu__list {
+        display: table;
+        width: 100vw;
+        font-size: 1.8rem;
+        font-weight: 700;
+        border-top: 0.0625rem solid #fff;
+        background-color: #005BAC;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__hamburger-menu__list li {
+        width: calc(100vw - 4rem);
+    }
+
+    .header__hamburger-menu__list li:not(:last-of-type) {
+        margin: 2rem 2rem 0 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 0.1rem solid #fff;
+    }
+
+    .header__hamburger-menu__list li:last-child {
+        margin: 3.2rem 2rem;
+        padding: 2rem 8.5rem;
+        border-radius: 3.3rem;
+        background-color: #fff;
+    }
+}
+
+/* 右矢印アイコン */
+@media (max-width: 767px) {
+    .header__hamburger-menu__list li:not(:last-of-type) a::before {
+        font-family: bootstrap-icons;
+        content: "\F135";
+        font-size: 1.8rem;
+        margin-right: 1.2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__hamburger-menu__list a {
+        line-height: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .header__hamburger-menu__list a {
+        font-size: 2rem;
+        color: #333;
+    }
+
+    .header__hamburger-menu__list li:last-of-type a {
+        color: #fff;
+    }
+}
+
+@media (min-width: 768px) {
+    .header__hamburger-menu__list a:hover {
+        color: #aaa;
+    }
+}
+
+/* ---------- 部品 ---------- */
+/* flexbox */
+.flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .flex {
+        flex-direction: row;
+        column-gap: 4.8rem;
+    }
+}
+
+/* ボタン */
+.button-apply-meeting {
+    color: #005BAC;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .button-apply-meeting {
+        padding: 1.6rem 4.1rem;
+        font-size: 2rem;
+        background: -moz-linear-gradient(left,
+                #0271E0, #53A2F0);
+        background: -webkit-linear-gradient(left,
+                #0271E0, #53A2F0);
+        background: linear-gradient(to right,
+                #0271E0, #53A2F0);
+        border-radius: 3rem;
+    }
 }
