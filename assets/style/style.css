@@ -25,6 +25,12 @@ body {
     color: #333;
 }
 
+@media (min-width: 1200px) {
+    body {
+        padding: 0 calc((100vw - 120rem) / 2);
+    }
+}
+
 a {
     color: #fff;
     text-decoration: none;
@@ -69,7 +75,7 @@ ul {
 
 @media (min-width: 1200px) {
     .header {
-        padding: 0  calc((100vw - 120rem) / 2);
+        padding: 0 calc((100vw - 120rem) / 2);
     }
 }
 
@@ -213,6 +219,11 @@ ul {
     flex-direction: column;
 }
 
+/* Poppinsフォント */
+.poppins {
+    font-family: "Poppins", sans-serif;
+}
+
 @media (min-width: 768px) {
     .flex {
         flex-direction: row;
@@ -237,5 +248,163 @@ ul {
         background: linear-gradient(to right,
                 #0271E0, #53A2F0);
         border-radius: 3rem;
+    }
+}
+
+/* ---------- 選ばれる3つの理由 ---------- */
+.reason {
+    margin: 2.4rem 1.6rem 3.6rem;
+}
+
+@media (min-width: 768px) {
+    .reason {
+        margin: 7.2rem 2rem;
+    }
+}
+
+.reason__title {
+    margin: 0 auto 1.7rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: calc(2.8/3.6);
+    text-align: center
+}
+
+.reason__title--emphasis {
+    font-size: 4.0rem;
+    font-weight: 700;
+    color: #F11F8D;
+    line-height: 0.9;
+}
+
+@media (min-width: 768px) {
+    .reason__title {
+        margin: 0 auto 3.2rem;
+        font-size: 3.6rem;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center
+    }
+
+    .reason__title--emphasis {
+        font-size: 5.4rem;
+        font-weight: 700;
+        color: #F11F8D;
+        line-height: 1.5;
+    }
+}
+
+ @media (min-width: 768px) {
+    .reason__item {
+        display: flex;
+        flex-direction: row;
+        column-gap: 4rem;
+        margin-bottom: 4.8rem;
+    }
+    .point--reverse {
+        flex-direction: row-reverse;
+    }
+
+    .reason__item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.point__img {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .point__img {
+        width: 56rem;
+    }
+}
+
+.point__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 3.6rem;
+}
+
+@media (min-width: 768px) {
+    .point__info {
+        width: 56rem;
+        justify-content: flex-start;
+    }
+}
+
+.point__info__no {
+    margin-top: 0.8rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-style: italic;
+    color: #F11F8D;
+    line-height: 1.5;
+}
+
+.point__info__no--emphasis::before {
+    font-size: 3.2rem;
+    line-height: 1.125;
+    content: "\00a0"
+}
+
+.point__info__no--emphasis {
+    font-size: 3.6rem;
+    line-height: 1.0;
+}
+
+@media (min-width: 768px) {
+    .point__info__no {
+        margin-top: 0;
+        font-size: 2.8rem;
+        font-weight: 700;
+        font-style: italic;
+        color: #F11F8D;
+        line-height: calc(2.8/3.6);
+    }
+
+    .point__info__no--emphasis::before {
+        font-size: 3.2rem;
+        line-height: 1.125;
+        content: "\00a0"
+    }
+
+    .point__info__no--emphasis {
+        font-size: 4.2rem;
+        line-height: calc(4.2/3.6);
+    }
+}
+
+.point__info__summary {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+    .point__info__summary {
+        font-size: 2.4rem;
+        line-height: 1.5;
+    }
+}
+
+#point2 > .point__info > .point__info__summary {
+    line-height: 1.4;
+}
+.point__info__detail {
+    margin-top: 1.2rem;
+    padding-right: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+@media (min-width: 768px) {
+    .point__info__detail {
+        margin-top: 2rem;
+        padding-right: 0;
+        font-size: 1.6rem;
     }
 }
