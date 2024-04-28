@@ -25,12 +25,6 @@ body {
     color: #333;
 }
 
-@media (min-width: 1200px) {
-    body {
-        padding: 0 calc((100vw - 120rem) / 2);
-    }
-}
-
 a {
     color: #fff;
     text-decoration: none;
@@ -262,6 +256,12 @@ ul {
     }
 }
 
+@media (min-width: 1200px) {
+    .reason {
+        padding: 0 calc((100vw - 120rem) / 2);
+    }
+}
+
 .reason__title {
     margin: 0 auto 1.7rem;
     font-size: 2.8rem;
@@ -294,7 +294,7 @@ ul {
     }
 }
 
- @media (min-width: 768px) {
+@media (min-width: 768px) {
     .reason__item {
         display: flex;
         flex-direction: row;
@@ -408,3 +408,70 @@ ul {
         font-size: 1.6rem;
     }
 }
+
+/* ---------- 入学説明会に申し込む ---------- */
+.inquiry {
+    padding: 4rem 1.6rem;
+    background-color: rgba(255, 85, 85, 0.1);
+}
+
+@media (min-width: 768px) {
+    .inquiry {
+        flex-direction: column;
+        padding-top: 5.6rem;
+        padding-bottom: 5.6rem;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .inquiry {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.inquiry__text {
+    margin-bottom: 1.2rem;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .inquiry__text {
+        margin-bottom: 2rem;
+        font-size: 1.6rem;
+        line-height: 2.625;
+        text-align: center;
+    }
+}
+
+.inquiry__text > span {
+    display: inline-block;
+}
+
+.inquiry__button-apply-meeting {
+    margin: 0 auto;
+    padding: 2.0rem 5.2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    background: -moz-linear-gradient(left,
+            #0271E0, #53A2F0);
+    background: -webkit-linear-gradient(left,
+            #0271E0, #53A2F0);
+    background: linear-gradient(to right,
+            #0271E0, #53A2F0);
+    border-radius: 3.5rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .inquiry__button-apply-meeting {
+        padding: 1.9rem 4.9rem 2.1rem 7.1rem;
+        font-size: 2.4rem;
+        line-height: 1.5;
+    }
+}
+
