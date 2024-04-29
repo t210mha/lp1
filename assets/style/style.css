@@ -475,6 +475,118 @@ ul {
     }
 }
 
+/* ---------- 費用 ---------- */
+.price {
+    margin: 6.4rem 1.6rem;
+}
+
+@media (min-width: 768px) {
+    .price {
+        margin: 7.2rem calc((100vw - 60rem) /2 );
+    }
+}
+
+.price__title {
+    margin: 0 14.8rem 2rem 13rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: calc(3.6/2.8);
+    text-align: center
+}
+
+@media (min-width: 768px) {
+    .price__title {
+        margin: 0 auto 3.2rem;
+        font-size: 3.6rem;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center
+    }
+}
+
+.price__table {
+    width: 100%;
+    border-collapse: collapse;
+    border: solid 0.3rem #ccc;
+    text-align: center;
+    line-height: 1;
+
+}
+
+.price__table__header__class,
+.price__table__header__price {
+    padding: 2rem 2.5rem;
+    background-color: #F5F5F5;
+    border-bottom: solid 0.1rem #ccc;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.25;
+}
+
+.price__table__header__price {
+    padding-left: 3.8rem;
+}
+
+@media (min-width: 768px) {
+    .price__table__header__class,
+    .price__table__header__price {
+        padding-top: 2.4rem;
+        padding-bottom: 2.4rem;
+        border: solid 0.1rem #ccc;
+        font-size: 1.8rem;
+        line-height: 2;
+    }
+
+    .price__table__header__class {
+        padding-left: 3.4rem;
+        padding-right: 3.4rem;
+    }
+
+    .price__table__header__price {
+        padding-left: 13.5rem;
+        padding-right: 13.5rem;
+    }
+}
+
+.price__table__class {
+    padding-top: 1.9rem;
+    padding-bottom: 2rem;
+    border: solid 0.1rem #ccc;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.25;
+}
+
+.price__table__price {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border: solid 0.1rem #ccc;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.25;
+    color: #F23397;
+}
+
+@media (min-width: 768px) {
+    .price__table__price {
+        font-size: 1.8rem;
+        line-height: 2;
+    }
+}
+
+.price__table__price--emphasis {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.285;
+}
+
+@media (min-width: 768px) {
+    .price__table__price--emphasis {
+        font-size: 3.2rem;
+        line-height: 1.125;
+    }
+}
+
 /* ---------- フッター ---------- */
 @media (min-width: 768px) {
     .footer-link__list {
