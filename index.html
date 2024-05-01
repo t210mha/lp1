@@ -23,8 +23,6 @@
 
         <!-- リセットCSS -->
         <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
-        <!-- Bootstrap Icons -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link href="/assets/style/style.css" rel="stylesheet">
     </head>
 
@@ -38,15 +36,15 @@
 
             <!-- ハンバーガーボタン -->
             <button type="button" class="header__hamburger-button">
-                <i class="bi bi-list"></i>
+                <img class="header__bars" src="assets/image/hamburger_btn_bars_01.svg" alt="">
             </button>
 
             <!-- ナビゲーション、ヘッダーメニュー -->
             <nav class="header__hamburger-menu">
                 <ul class="header__hamburger-menu__list flex">
-                    <li><a href="/index.html#reason">選ばれる3つの理由</a></li>
-                    <li><a href="/index.html#course">コース・目的</a></li>
-                    <li><a href="/index.html#price">費 用</a></li>
+                    <li class="header__hamburger-menu__item"><img class="header__hamburger-menu__arrow-right-white" src="/assets/image/arrow_right_white_01.svg" alt=""><a href="/index.html#reason">選ばれる3つの理由</a></li>
+                    <li class="header__hamburger-menu__item"><img class="header__hamburger-menu__arrow-right-white" src="/assets/image/arrow_right_white_01.svg" alt=""><a href="/index.html#course">コース・目的</a></li>
+                    <li class="header__hamburger-menu__item"><img class="header__hamburger-menu__arrow-right-white" src="/assets/image/arrow_right_white_01.svg" alt=""><a href="/index.html#price">費 用</a></li>
                     <li><a class="button-apply-meeting" href="/entry">入学説明会に申し込む</a></li>
                 </ul>
             </nav>
@@ -57,11 +55,7 @@
 
             <!-- cover -->
             <div class="cover">
-                <picture>
-                    <source media="(max-width: 767px)" srcset="/assets/image/mv_sp_01.jpg">
-                    <source media="(min-width: 768px)" srcset="/assets/image/mv_pc_01.jpg">
-                    <img class="cover__img" src="/assets/image/mv_sp_01.jpg" alt="現役高校生・高卒生 入学説明会のお申し込み開始">
-                </picture>
+                <div class="cover__img"></div>
                 <div class="cover__result">
                     <div class="cover__result-item">
                         <img class="cover__result-item__frame" src="/assets/image/frame_left_01.png" alt="難関大学の合格実績">
@@ -148,7 +142,10 @@
                                     <img class="course__tab__content__image__pc" src="/assets/image/course_grade_pc_01.jpg" alt="高卒生">
                                 </a>
                             </div>
-                            <h3 class="course__tab__content__title"><i class="title__button-icon bi bi-arrow-right-short"></i>高卒生</h3>
+                            <div class="courese__tab__content__text">
+                                <img class="course-tab__arrow-right--blue" src="/assets/image/arrow_right_blue_01.svg" alt="">
+                                <h3 class="course__tab__content__title">高卒生</h3>
+                            </div>
                         </div>
                         <!-- 2個目 -->
                         <div class="course__tab__content__item">
@@ -157,7 +154,10 @@
                                     <img class="course__tab__content__image__pc" src="/assets/image/course_grade_pc_02.jpg" alt="高校3年生">
                                 </a>
                             </div>
-                            <h3 class="course__tab__content__title"><i class="title__button-icon bi bi-arrow-right-short"></i>高校3年生</h3>
+                            <div class="courese__tab__content__text">
+                                <img class="course-tab__arrow-right--blue" src="/assets/image/arrow_right_blue_01.svg" alt="">
+                                <h3 class="course__tab__content__title">高校3年生</h3>
+                            </div>
                         </div>
                         <!-- 3個目 -->
                         <div class="course__tab__content__item">
@@ -166,7 +166,10 @@
                                     <img class="course__tab__content__image__pc" src="/assets/image/course_grade_pc_03.jpg" alt="高校2年生">
                                 </a>
                             </div>
-                            <h3 class="course__tab__content__title"><i class="title__button-icon bi bi-arrow-right-short"></i>高校2年生</h3>
+                            <div class="courese__tab__content__text">
+                                <img class="course-tab__arrow-right--blue" src="/assets/image/arrow_right_blue_01.svg" alt="">
+                                <h3 class="course__tab__content__title">高校2年生</h3>
+                            </div>
                         </div>
                         <!-- 4個目 -->
                         <div class="course__tab__content__item">
@@ -175,7 +178,10 @@
                                     <img class="course__tab__content__image__pc" src="/assets/image/course_grade_pc_04.jpg" alt="高校1年生">
                                 </a>
                             </div>
-                            <h3 class="course__tab__content__title"><i class="title__button-icon bi bi-arrow-right-short"></i>高校1年生</h3>
+                            <div class="courese__tab__content__text">
+                                <img class="course-tab__arrow-right--blue" src="/assets/image/arrow_right_blue_01.svg" alt="">
+                                <h3 class="course__tab__content__title">高校1年生</h3>
+                            </div>
                         </div>
                     </div>
                     <!-- タブ2 -->
@@ -186,7 +192,10 @@
                                 <a href="#"><img class="course__tab__content__image" src="/assets/image/course_target_01.jpg" alt="難関大学・医学部合格を目指す">
                                 </a>
                             </div>
-                            <h3 class="course__tab__content__title"><i class="title__button-icon bi bi-arrow-right-short"></i>難関大学・医学部合格を目指す</h3>
+                            <div class="courese__tab__content__text">
+                                <img class="course-tab__arrow-right--blue" src="/assets/image/arrow_right_blue_01.svg" alt="">
+                                <h3 class="course__tab__content__title">難関大学・医学部合格を目指す</h3>
+                            </div>
                         </div>
                         <!-- 2個目 -->
                         <div class="course__tab__content__item">
@@ -194,21 +203,30 @@
                                 <a href="#"><img class="course__tab__content__image" src="/assets/image/course_target_02.jpg" alt="名門私立大学合格を目指す">
                                 </a>
                             </div>
-                            <h3 class="course__tab__content__title"><i class="title__button-icon bi bi-arrow-right-short"></i>名門私立大学合格を目指す</h3>
+                            <div class="courese__tab__content__text">
+                                <img class="course-tab__arrow-right--blue" src="/assets/image/arrow_right_blue_01.svg" alt="">
+                                <h3 class="course__tab__content__title">名門私立大学合格を目指す</h3>
+                            </div>
                         </div>
                         <!-- 3個目 -->
                         <div class="course__tab__content__item">
                             <div class="course__tab__content__link">
                                 <a href="#"><img class="course__tab__content__image" src="/assets/image/course_target_03.jpg" alt="国公立大学合格を目指す"></a>
                             </div>
-                            <h3 class="course__tab__content__title"><i class="title__button-icon bi bi-arrow-right-short"></i>国公立大学合格を目指す</h3>
+                            <div class="courese__tab__content__text">
+                                <img class="course-tab__arrow-right--blue" src="/assets/image/arrow_right_blue_01.svg" alt="">
+                                <h3 class="course__tab__content__title">国公立大学合格を目指す</h3>
+                            </div>
                         </div>
                         <!-- 4個目 -->
                         <div class="course__tab__content__item">
                             <div class="course__tab__content__link">
                                 <a href="#"><img class="course__tab__content__image" src="/assets/image/course_target_04.jpg" alt="海外の大学合格を目指す"></a>
                             </div>
-                            <h3 class="course__tab__content__title"><i class="title__button-icon bi bi-arrow-right-short"></i>海外の大学合格を目指す</h3>
+                            <div class="courese__tab__content__text">
+                                <img class="course-tab__arrow-right--blue" src="/assets/image/arrow_right_blue_01.svg" alt="">
+                                <h3 class="course__tab__content__title">海外の大学合格を目指す</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
