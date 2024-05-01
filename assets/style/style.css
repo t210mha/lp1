@@ -82,7 +82,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin: 1.8rem auto 1.8rem 1.6rem;
+    margin: 2.7rem auto 1.8rem 1.6rem;
     width: 16.7rem;
     font-size: 2.2rem;
     font-weight: 700;
@@ -121,7 +121,7 @@ ul {
     .header__hamburger-button-bars {
         margin: 2.2rem 2rem;
         width: 3.0rem;
-        height: 2.6rem;
+        height: 2.8rem;
     }
 }
 
@@ -132,7 +132,7 @@ ul {
         top: 7rem;
         left: 0;
         width: 100%;
-        height: calc(100vh - 7rem);
+        height: 33.1rem;
         background-color: #fff;
         transition: all 0.6s;
         transform: translateX(100%);
@@ -289,7 +289,7 @@ span {
 @media (max-width: 767px) {
     .cover__img {
         background-image: url(/assets/image/mv_sp_01.jpg);
-        background-position: center top;
+        background-position: center right;
         background-size: auto 100%;
         height: 25rem;
     }
@@ -360,6 +360,7 @@ span {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 0.1rem;
     }
 }
 
@@ -376,7 +377,7 @@ span {
     .cover__result-text {
         color: #333;
         font-size: 1.1rem;
-        line-height: calc(16/11);
+        line-height: 1.55;
     }
 }
 
@@ -391,15 +392,15 @@ span {
     .cover__result-ranking {
         font-family: "Poppins", sans-serif;
         color: #F11F8D;
-        font-size: 2rem;
+        font-size: 2.6rem;
         font-weight: 800;
         font-style: italic;
         text-align: center;
     }
 
     .cover__result-ranking--large {
-        font-size: 3rem;
-        line-height: calc(55/36);
+        font-size: 3.8rem;
+        line-height: 1.3;
     }
 }
 
@@ -441,11 +442,6 @@ span {
     }
 }
 
-
-/* .cover__title-list>h2 {
-    margin-top: 0;
-} */
-
 .cover__title-item {
     margin-top: 0;
     font-size: 1.4rem;
@@ -467,7 +463,7 @@ span {
     font-size: 2.5rem;
     font-weight: 900;
     color: #005BAC;
-    line-height: 1.44;
+    line-height: 1.4;
 }
 
 @media (min-width: 768px) {
@@ -553,7 +549,7 @@ span {
 
 /* ---------- 選ばれる3つの理由 ---------- */
 .reason {
-    margin: 2.4rem 1.6rem 3.6rem;
+    margin: 3.4rem 1.6rem 3.3rem;
 }
 
 @media (min-width: 768px) {
@@ -569,16 +565,16 @@ span {
 }
 
 .reason__title {
-    margin: 0 auto 1.7rem;
+    margin: 0 auto 2.25rem;
     font-size: 2.8rem;
     font-weight: 700;
-    line-height: calc(2.8/3.6);
+    line-height: 1.45;
     text-align: center
 }
 
 .reason__title--large {
     font-family: "Poppins", sans-serif;
-    font-size: 4.0rem;
+    font-size: 4.1rem;
     font-weight: 700;
     color: #F11F8D;
     line-height: 0.9;
@@ -619,12 +615,36 @@ span {
     }
 }
 
-.point__img {
-    width: 100%;
+@media (max-width: 767px) {
+    #point1>.point__img {
+        background-image: url(/assets/image/reason_sp_01.jpg);
+        height: 22rem;
+    }
+
+    #point2>.point__img {
+        background-image: url(/assets/image/reason_sp_02.jpg);
+        height: 22rem;
+    }
+
+    #point3>.point__img {
+        background-image: url(/assets/image/reason_sp_03.jpg);
+        height: 22rem;
+    }
 }
 
 @media (min-width: 768px) {
-    .point__img {
+    #point1>.point__img {
+        background-image: url(/assets/image/reason_pc_01.jpg);
+        width: 56rem;
+    }
+
+    #point2>.point__img {
+        background-image: url(/assets/image/reason_pc_02.jpg);
+        width: 56rem;
+    }
+
+    #point3>.point__img {
+        background-image: url(/assets/image/reason_pc_03.jpg);
         width: 56rem;
     }
 }
@@ -634,7 +654,7 @@ span {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-bottom: 3.6rem;
+    margin-bottom: 3.35rem;
 }
 
 @media (min-width: 768px) {
@@ -691,7 +711,7 @@ span {
 .point__summary {
     font-size: 2rem;
     font-weight: 700;
-    line-height: 1.8;
+    line-height: 1.7;
 }
 
 @media (min-width: 768px) {
@@ -701,12 +721,15 @@ span {
     }
 }
 
-#point2>.point__info>.point__summary {
+#point2>.point__info>.point__summary,
+#point3>.point__info>.point__summary {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
     line-height: 1.4;
 }
 
 .point__text {
-    margin-top: 1.2rem;
+    margin-top: 0.8rem;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
@@ -726,17 +749,17 @@ span {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    padding: 4rem 1.6rem;
+    padding: 3.8rem 1.6rem 4rem;
     background-color: rgba(255, 85, 85, 0.1);
 }
 
 /* flexbox */
-.flex {
+/* .flex {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-}
+} */
 
 @media (min-width: 768px) {
     .flex {
@@ -751,9 +774,6 @@ span {
         display: flex;
         align-items: flex-start;
         justify-content: center;
-        /* flex-direction: column;
-        flex-direction: row;
-        column-gap: 4.8rem; */
         flex-direction: column;
         padding-top: 5.6rem;
         padding-bottom: 5.6rem;
@@ -769,7 +789,7 @@ span {
 }
 
 .inquiry__text {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
     font-size: 1.6rem;
     line-height: 1.75;
     text-align: center;
@@ -784,13 +804,9 @@ span {
     }
 }
 
-/* .inquiry__text>span {
-    display: inline-block;
-} */
-
 .inquiry__button-apply-meeting {
     margin: 0 auto;
-    padding: 2.0rem 5.2rem;
+    padding: 1.7rem 5.25rem;
     font-size: 2rem;
     font-weight: 700;
     color: #fff;
@@ -804,6 +820,11 @@ span {
     text-align: center;
 }
 
+.inquiry__button-apply-meeting:hover {
+    opacity: 0.75;
+    transition: all 0.3s;
+}
+
 @media (min-width: 768px) {
     .inquiry__button-apply-meeting {
         padding: 1.9rem 4.9rem 2.1rem 7.1rem;
@@ -814,7 +835,7 @@ span {
 
 /* ---------- コース・目的 ---------- */
 .course {
-    margin: 6.4rem 0;
+    margin: 6.6rem 0 6.25rem;
 }
 
 @media (min-width: 768px) {
@@ -830,11 +851,11 @@ span {
 }
 
 .course__title {
-    margin: 0 9.6rem 2.1rem 11.2rem;
+    margin: 0 9.6rem 2.3rem 11.1rem;
     font-size: 2.8rem;
     font-weight: 700;
-    line-height: calc(3.6/2.8);
-    text-align: center
+    line-height: 1.3;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -851,7 +872,7 @@ span {
     height: 6.6rem;
     font-size: 1.8rem;
     font-weight: 700;
-    line-height: 2;
+    line-height: 1.7;
     text-align: center;
     color: #333;
     background-color: #F0F0F0;
@@ -886,13 +907,16 @@ span {
 }
 
 .tab__menu:first-of-type {
-    margin-left: 1.6rem;
-    margin-right: 0.75rem;
+    margin-left: 1.7rem;
+    margin-right: 0.95rem;
 }
 
 .tab__menu:last-of-type {
-    margin-left: 0.75rem;
-    margin-right: 1.6rem;
+    margin-left: 0.6rem;
+    margin-right: 0;
+    padding-right: 2.4rem;
+    width: 18rem;
+
 }
 
 @media (min-width: 768px) {
@@ -968,8 +992,7 @@ input[name="tab__menu"] {
 }
 
 /* SP用 PC用の表示切り替え */
-.course__tab-image-sp,
-.course__tab-image {
+.course__tab-image-sp {
     display: block;
     height: 22rem;
     border-radius: 1rem;
@@ -984,8 +1007,7 @@ input[name="tab__menu"] {
         display: none;
     }
 
-    .course__tab-image-pc,
-    .course__tab-image {
+    .course__tab-image-pc {
         display: block;
         height: auto;
         width: 100%;
@@ -994,9 +1016,7 @@ input[name="tab__menu"] {
 }
 
 @media (min-width: 768px) {
-
-    a:hover>.course__tab-image-pc,
-    a:hover>.course__tab-image {
+    a:hover>.course__tab-image-pc {
         transform: scale(1.2, 1.2);
         transition: 1s all;
         opacity: 0.75;
@@ -1008,7 +1028,7 @@ input[name="tab__menu"] {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    margin: 1.2rem 0 2.8rem;
+    margin: 1.6rem 0 3.3rem;
     height: 2rem;
 }
 
@@ -1019,27 +1039,16 @@ input[name="tab__menu"] {
 }
 
 .course__tab-title {
-    margin-left: 0.6rem;
+    margin-left: 0.8rem;
     color: #333;
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.8;
 }
 
-/* @media (min-width: 768px) {
-    .course__tab-image-sp {
-        display: none;
-    }
-
-    .course__tab-image-pc {
-        display: block;
-    }
-} */
-
-
 /* ---------- 費用 ---------- */
 .price {
-    margin: 6.4rem 1.6rem;
+    margin: 6.6rem 1.6rem 6.2rem;
 }
 
 @media (min-width: 768px) {
@@ -1049,10 +1058,10 @@ input[name="tab__menu"] {
 }
 
 .price__title {
-    margin: 0 14.8rem 2rem 13rem;
+    margin: 0 11.5rem 2.2rem 13rem;
     font-size: 2.8rem;
     font-weight: 700;
-    line-height: calc(3.6/2.8);
+    line-height: 1.3;
     text-align: center
 }
 
@@ -1075,18 +1084,22 @@ input[name="tab__menu"] {
 
 }
 
-.price__table-header-class,
-.price__table-header-price {
-    padding: 2rem 2.5rem;
+.price__table-header-class {
+    padding: 1.3rem 0.9rem 1.3rem 1.2rem;
     background-color: #F5F5F5;
     border-bottom: solid 0.1rem #ccc;
     font-size: 1.6rem;
     font-weight: 400;
-    line-height: 2.25;
+    line-height: 2.3;
 }
 
 .price__table-header-price {
-    padding-left: 3.8rem;
+    padding: 1.3rem 0.9rem 1.3rem 0;
+    background-color: #F5F5F5;
+    border-bottom: solid 0.1rem #ccc;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4;
 }
 
 @media (min-width: 768px) {
@@ -1112,21 +1125,20 @@ input[name="tab__menu"] {
 }
 
 .price__table-class {
-    padding-top: 1.9rem;
-    padding-bottom: 2rem;
+    padding-top: 1.4rem;
+    padding-bottom: 1.35rem;
     border: solid 0.1rem #ccc;
     font-size: 1.6rem;
     font-weight: 400;
-    line-height: 2.25;
+    line-height: 2.2;
 }
 
 .price__table-price {
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
+    padding-top: 0.5rem;
     border: solid 0.1rem #ccc;
     font-size: 1.6rem;
     font-weight: 400;
-    line-height: 2.25;
+    line-height: 2.35;
     color: #F23397;
 }
 
@@ -1139,9 +1151,9 @@ input[name="tab__menu"] {
 
 .price__table-price-amount {
     font-family: "Poppins", sans-serif;
-    font-size: 2.8rem;
+    font-size: 2.9rem;
     font-weight: 700;
-    line-height: 1.285;
+    line-height: 1.1;
 }
 
 @media (min-width: 768px) {
@@ -1181,7 +1193,7 @@ input[name="tab__menu"] {
     color: #fff;
     font-size: 2.2rem;
     font-weight: 700;
-    line-height: calc(28/22);
+    line-height: 1.45;
 }
 
 @media (min-width: 768px) {
@@ -1243,7 +1255,7 @@ input[name="tab__menu"] {
 }
 
 .footer__copyright {
-    padding: 3.2rem 0;
+    padding: 2.4rem 0 2.8rem;
     color: #333;
     background-color: #DDD;
 }
@@ -1259,7 +1271,7 @@ input[name="tab__menu"] {
     font-family: "Poppins", sans-serif;
     padding-left: 3.1rem;
     font-size: 1.3rem;
-    line-height: calc(28/13);
+    line-height: 2.1;
 }
 
 @media (min-width: 768px) {
