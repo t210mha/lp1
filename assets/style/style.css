@@ -159,24 +159,8 @@ ul {
         font-weight: 700;
         border-top: 0.0625rem solid #fff;
         background-color: #005BAC;
-        /* display: flex; */
-        /* align-items: flex-start;
-        justify-content: center;
-        flex-direction: column; */
     }
 }
-
-/* .flex {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-}
-
-/* Poppinsフォント */
-/* .poppins {
-    font-family: "Poppins", sans-serif;
-} */
 
 @media (min-width: 768px) {
     .header__nav-list {
@@ -196,14 +180,14 @@ ul {
     }
 
     .header__nav-list li:not(:last-of-type) {
-        margin: 2rem 2rem 0 2rem;
-        padding-bottom: 2rem;
+        margin: 2.2rem 2rem 0 2rem;
+        padding-bottom: 2.4rem;
         border-bottom: 0.1rem solid #fff;
     }
 
     .header__nav-list li:last-child {
         margin: 3.2rem 2rem;
-        padding: 2rem 0;
+        padding: 1.5rem 0;
         border-radius: 3.3rem;
         background-color: #fff;
         text-align: center;
@@ -221,7 +205,7 @@ ul {
 
 @media (max-width: 767px) {
     .header__nav-arrow-right {
-        height: 1.5rem;
+        height: 1.1rem;
         margin-right: 1.2rem;
     }
 }
@@ -234,8 +218,13 @@ ul {
 
 @media (max-width: 767px) {
     .header__nav-list a {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
+        font-weight: 400;
         line-height: 1;
+    }
+
+    .header__nav-list li:last-of-type a {
+        font-weight: 700;
     }
 }
 
@@ -257,7 +246,6 @@ ul {
 @media (max-width: 767px) {
     .header__nav-button-apply-meeting {
         color: #005BAC;
-        font-weight: 700;
     }
 }
 
