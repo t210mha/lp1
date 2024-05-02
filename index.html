@@ -31,7 +31,10 @@
         <header class="header">
             <!-- ロゴ -->
             <h1 class="header__logo">
-                <a class="header__logo-link" href="/"><img src="assets/image/header_logo_01.svg" alt="Kira-Kira Juku"></a>
+                <a class="header__logo-link" href="/">
+                    <img class="header__logo-img-sp" src="/assets/image/header_logo_sp_01.svg" alt="Kira-Kira Juku">
+                    <img class="header__logo-img-pc" src="/assets/image/header_logo_pc_01.svg" alt="Kira-Kira Juku">
+                </a>
             </h1>
 
             <!-- ハンバーガーボタン -->
@@ -130,9 +133,11 @@
                 <!-- タブ -->
                 <div class="course__tab">
                     <input id="tab01" type="radio" name="tab__menu" checked>
-                    <label class="tab__menu" for="tab01">学年別から選ぶ</label>
                     <input id="tab02" type="radio" name="tab__menu">
-                    <label class="tab__menu" for="tab02">目的別から選ぶ</label>
+                    <div class="tab__menu-wrapper">
+                        <label id="tab__menu01" class="tab__menu" for="tab01">学年別から選ぶ</label>
+                        <label id="tab__menu02" class="tab__menu" for="tab02">目的別から選ぶ</label>
+                    </div>
                     <!-- タブ1 -->
                     <div id="course__tab01" class="course__tab-panel">
                         <!-- 1個目 -->
@@ -190,7 +195,7 @@
                         <div class="course__tab-item">
                             <div class="course__tab-link">
                                 <a href="#"><img class="course__tab-image-sp" src="/assets/image/course_target_sp_01.jpg" alt="難関大学・医学部合格を目指す">
-                                    <img class="course__tab-image-pc" src="/assets/image/course_target_pc_01.jpg" alt="高校1年生">
+                                    <img class="course__tab-image-pc" src="/assets/image/course_target_pc_01.jpg" alt="難関大学・医学部合格を目指す">
                                 </a>
                             </div>
                             <div class="course__tab-text">
@@ -202,7 +207,7 @@
                         <div class="course__tab-item">
                             <div class="course__tab-link">
                                 <a href="#"><img class="course__tab-image-sp" src="/assets/image/course_target_sp_02.jpg" alt="名門私立大学合格を目指す">
-                                    <img class="course__tab-image-pc" src="/assets/image/course_target_pc_02.jpg" alt="高校1年生">
+                                    <img class="course__tab-image-pc" src="/assets/image/course_target_pc_02.jpg" alt="名門私立大学合格を目指す">
                                 </a>
                             </div>
                             <div class="course__tab-text">
@@ -213,19 +218,22 @@
                         <!-- 3個目 -->
                         <div class="course__tab-item">
                             <div class="course__tab-link">
-                                <a href="#"><img class="course__tab-image-sp" src="/assets/image/course_target_sp_03.jpg" alt="国公立大学合格を目指す"></a>
-                                <img class="course__tab-image-pc" src="/assets/image/course_target_pc_03.jpg" alt="高校1年生">
+                                <a href="#"><img class="course__tab-image-sp" src="/assets/image/course_target_sp_03.jpg" alt="国公立大学合格を目指す">
+                                    <img class="course__tab-image-pc" src="/assets/image/course_target_pc_03.jpg" alt="国公立大学合格を目指す">
+                                </a>
                             </div>
                             <div class="course__tab-text">
                                 <img class="course__tab-arrow-right" src="/assets/image/arrow_right_blue_01.svg" alt="">
                                 <h3 class="course__tab-title">国公立大学合格を目指す</h3>
+
                             </div>
                         </div>
                         <!-- 4個目 -->
                         <div class="course__tab-item">
                             <div class="course__tab-link">
-                                <a href="#"><img class="course__tab-image-sp" src="/assets/image/course_target_sp_04.jpg" alt="海外の大学合格を目指す"></a>
-                                <img class="course__tab-image-pc" src="/assets/image/course_target_pc_04.jpg" alt="高校1年生">
+                                <a href="#"><img class="course__tab-image-sp" src="/assets/image/course_target_sp_04.jpg" alt="海外の大学合格を目指す">
+                                    <img class="course__tab-image-pc" src="/assets/image/course_target_pc_04.jpg" alt="海外の大学合格を目指す">
+                                </a>
                             </div>
                             <div class="course__tab-text">
                                 <img class="course__tab-arrow-right" src="/assets/image/arrow_right_blue_01.svg" alt="">
@@ -273,9 +281,9 @@
                             <td class="price__table-class">22講</td>
                             <td class="price__table-price"><span class="price__table-price-amount">107,800</span>円</td>
                         </tr>
-                        <tr>
+                        <tr class="price__table-row-last">
                             <td class="price__table-class">24講</td>
-                            <td class="price__table-price"><span class="price__table-price-amount">&nbsp;&nbsp;&nbsp;117,600</span>円</td>
+                            <td class="price__table-price"><span class="price__table-price-amount">117,600</span>円</td>
                         </tr>
                     </table>
                 </div>
