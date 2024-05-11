@@ -32,8 +32,10 @@
             <!-- ロゴ -->
             <h1 class="header__logo">
                 <a class="header__logo-link" href="#">
-                    <img class="header__logo-img-sp" src="/assets/image/header_logo_sp_01.svg" alt="Kira-Kira Juku">
-                    <img class="header__logo-img-pc" src="/assets/image/header_logo_pc_01.svg" alt="Kira-Kira Juku">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="/assets/image/header_logo_pc_01.svg" alt="Kira-Kira Juku">
+                        <img src="/assets/image/header_logo_sp_01.svg" alt="Kira-Kira Juku">
+                    </picture>
                 </a>
             </h1>
 
@@ -61,12 +63,12 @@
                 <div class="cover__img"></div>
                 <div class="cover__result">
                     <div class="cover__result-wrapper">
-                        <img class="cover__result-frame" src="/assets/image/frame_left_01.png" alt="難関大学の合格実績">
+                        <img class="cover__result-frame" src="/assets/image/frame_left_01.png" alt="">
                         <div class="cover__result-detail">
                             <div class="cover__result-text">難関大学の合格実績</div>
                             <div class="cover__result-ranking">No.<span class="cover__result-ranking cover__result-ranking--large">1</span></div>
                         </div>
-                        <img class="cover__result-frame" src="/assets/image/frame_right_01.png" alt="No1">
+                        <img class="cover__result-frame" src="/assets/image/frame_right_01.png" alt="">
                     </div>
                 </div>
                 <div class="cover__title-list">
@@ -87,7 +89,12 @@
                 <h2 class="reason__title">選ばれる<span class="reason__title--large">3</span>つの理由</h2>
                 <div class="reason__list">
                     <div id="point1" class="reason__item point">
-                        <div class="point__img"></div>
+                        <div class="point__img">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="/assets/image/reason_pc_01.jpg" alt="">
+                                <img src="/assets/image/reason_sp_01.jpg" alt="">
+                            </picture>
+                        </div>
                         <div class="point__info">
                             <div class="point__no">Point<span class="point__no point__no--large">1</span></div>
                             <div class="point__summary">実績のある講師陣だから安心</div>
@@ -97,7 +104,12 @@
                         </div>
                     </div>
                     <div id="point2" class="reason__item point--reverse">
-                        <div class="point__img"></div>
+                        <div class="point__img">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="/assets/image/reason_pc_02.jpg" alt="">
+                                <img src="/assets/image/reason_sp_02.jpg" alt="">
+                            </picture>
+                        </div>
                         <div class="point__info">
                             <div class="point__no">Point<span class="point__no point__no--large">2</span></div>
                             <div class="point__summary">オンラインにも対応だから、早送り巻き戻し視聴できる。</div>
@@ -107,7 +119,12 @@
                         </div>
                     </div>
                     <div id="point3" class="reason__item point">
-                        <div class="point__img"></div>
+                        <div class="point__img">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="/assets/image/reason_pc_03.jpg" alt="">
+                                <img src="/assets/image/reason_sp_03.jpg" alt="">
+                            </picture>
+                        </div>
                         <div class="point__info">
                             <div class="point__no">Point<span class="point__no point__no--large">3</span></div>
                             <div class="point__summary">徹底した個別指導で、弱点を残さずそれぞれに合わせた大学受験対策。</div>
@@ -143,8 +160,11 @@
                         <!-- 1個目 -->
                         <div class="course__tab-item">
                             <div class="course__tab-link">
-                                <a href="#"><img class="course__tab-image-sp" src="/assets/image/course_grade_sp_01.jpg" alt="高卒生">
-                                    <img class="course__tab-image-pc" src="/assets/image/course_grade_pc_01.jpg" alt="高卒生">
+                                <a class="course__tab-image" href="#">
+                                    <picture>
+                                        <source media="(min-width: 768px)" srcset="/assets/image/course_grade_pc_01.jpg" alt="">
+                                        <img class="course__tab-image-small" src="/assets/image/course_grade_sp_01.jpg" alt="">
+                                    </picture>
                                 </a>
                             </div>
                             <div>
@@ -157,8 +177,11 @@
                         <!-- 2個目 -->
                         <div class="course__tab-item">
                             <div class="course__tab-link">
-                                <a href="#"><img class="course__tab-image-sp" src="/assets/image/course_grade_sp_02.jpg" alt="高校3年生">
-                                    <img class="course__tab-image-pc" src="/assets/image/course_grade_pc_02.jpg" alt="高校3年生">
+                                <a class="course__tab-image" href="#">
+                                    <picture>
+                                        <source media="(min-width: 768px)" srcset="/assets/image/course_grade_pc_02.jpg" alt="">
+                                        <img src="/assets/image/course_grade_sp_02.jpg" alt="">
+                                    </picture>
                                 </a>
                             </div>
                             <div>
@@ -171,8 +194,11 @@
                         <!-- 3個目 -->
                         <div class="course__tab-item">
                             <div class="course__tab-link">
-                                <a href="#"><img class="course__tab-image-sp" src="/assets/image/course_grade_sp_03.jpg" alt="高校2年生">
-                                    <img class="course__tab-image-pc" src="/assets/image/course_grade_pc_03.jpg" alt="高校2年生">
+                                <a class="course__tab-image" href="#">
+                                    <picture>
+                                        <source media="(min-width: 768px)" srcset="/assets/image/course_grade_pc_03.jpg" alt="">
+                                        <img src="/assets/image/course_grade_sp_03.jpg" alt="">
+                                    </picture>
                                 </a>
                             </div>
                             <div>
@@ -185,8 +211,11 @@
                         <!-- 4個目 -->
                         <div class="course__tab-item">
                             <div class="course__tab-link">
-                                <a href="#"><img class="course__tab-image-sp" src="/assets/image/course_grade_sp_04.jpg" alt="高校1年生">
-                                    <img class="course__tab-image-pc" src="/assets/image/course_grade_pc_04.jpg" alt="高校1年生">
+                                <a class="course__tab-image" href="#">
+                                    <picture>
+                                        <source media="(min-width: 768px)" srcset="/assets/image/course_grade_pc_04.jpg" alt="">
+                                        <img src="/assets/image/course_grade_sp_04.jpg" alt="">
+                                    </picture>
                                 </a>
                             </div>
                             <div>
@@ -202,8 +231,11 @@
                         <!-- 1個目 -->
                         <div class="course__tab-item">
                             <div class="course__tab-link">
-                                <a href="#"><img class="course__tab-image-sp" src="/assets/image/course_target_sp_01.jpg" alt="難関大学・医学部合格を目指す">
-                                    <img class="course__tab-image-pc" src="/assets/image/course_target_pc_01.jpg" alt="難関大学・医学部合格を目指す">
+                                <a class="course__tab-image" href="#">
+                                    <picture>
+                                        <source media="(min-width: 768px)" srcset="/assets/image/course_target_pc_01.jpg" alt="">
+                                        <img src="/assets/image/course_target_sp_01.jpg" alt="">
+                                    </picture>
                                 </a>
                             </div>
                             <div>
@@ -216,8 +248,11 @@
                         <!-- 2個目 -->
                         <div class="course__tab-item">
                             <div class="course__tab-link">
-                                <a href="#"><img class="course__tab-image-sp" src="/assets/image/course_target_sp_02.jpg" alt="名門私立大学合格を目指す">
-                                    <img class="course__tab-image-pc" src="/assets/image/course_target_pc_02.jpg" alt="名門私立大学合格を目指す">
+                                <a class="course__tab-image" href="#">
+                                    <picture>
+                                        <source media="(min-width: 768px)" srcset="/assets/image/course_target_pc_02.jpg" alt="">
+                                        <img src="/assets/image/course_target_sp_02.jpg" alt="">
+                                    </picture>
                                 </a>
                             </div>
                             <div>
@@ -230,8 +265,11 @@
                         <!-- 3個目 -->
                         <div class="course__tab-item">
                             <div class="course__tab-link">
-                                <a href="#"><img class="course__tab-image-sp" src="/assets/image/course_target_sp_03.jpg" alt="国公立大学合格を目指す">
-                                    <img class="course__tab-image-pc" src="/assets/image/course_target_pc_03.jpg" alt="国公立大学合格を目指す">
+                                <a class="course__tab-image" href="#">
+                                    <picture>
+                                        <source media="(min-width: 768px)" srcset="/assets/image/course_target_pc_03.jpg" alt="">
+                                        <img src="/assets/image/course_target_sp_03.jpg" alt="">
+                                    </picture>
                                 </a>
                             </div>
                             <div>
@@ -244,8 +282,11 @@
                         <!-- 4個目 -->
                         <div class="course__tab-item">
                             <div class="course__tab-link">
-                                <a href="#"><img class="course__tab-image-sp" src="/assets/image/course_target_sp_04.jpg" alt="海外の大学合格を目指す">
-                                    <img class="course__tab-image-pc" src="/assets/image/course_target_pc_04.jpg" alt="海外の大学合格を目指す">
+                                <a class="course__tab-image" href="#">
+                                    <picture>
+                                        <source media="(min-width: 768px)" srcset="/assets/image/course_target_pc_04.jpg" alt="">
+                                        <img src="/assets/image/course_target_sp_04.jpg" alt="">
+                                    </picture>
                                 </a>
                             </div>
                             <div>
@@ -319,18 +360,18 @@
             <!-- リンク -->
             <div class="footer__link">
                 <div class="footer__list">
-                    <div class="footer__item"><a href="/faq">
-                            <img id="qa_sp" class="footer__img"
-                                src="/assets/image/footer_qa_sp_01.jpg" alt="よくあるご質問" />
-                            <img id="qa_pc" class="footer__img"
-                                src="/assets/image/footer_qa_pc_01.jpg" alt="よくあるご質問" />
+                    <div class="footer__item"><a class="footer__img" href="/faq">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="/assets/image/footer_qa_pc_01.jpg" alt="">
+                                <img class=".footer__img--small" src="/assets/image/footer_qa_sp_01.jpg" alt="">
+                            </picture>
                             <p class="footer__img-text">よくあるご質問</p>
                         </a></div>
-                    <div class="footer__item"><a href="/search">
-                            <img id="classroom_sp" class="footer__img"
-                                src="/assets/image/footer_classroom_sp_01.jpg" alt="お近くの教室を探す" />
-                            <img id="classroom_pc" class="footer__img"
-                                src="/assets/image/footer_classroom_pc_01.jpg" alt="お近くの教室を探す" />
+                    <div class="footer__item"><a class="footer__img" href="/search">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="/assets/image/footer_classroom_pc_01.jpg" alt="">
+                                <img src="/assets/image/footer_classroom_sp_01.jpg" alt="">
+                            </picture>
                             <p class="footer__img-text">お近くの教室を探す</p>
                         </a>
                     </div>
