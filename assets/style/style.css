@@ -205,17 +205,17 @@ ul {
 
 
 @media (max-width: 767px) {
-    .header__nav-list li {
+    .header__nav-list div {
         width: calc(100vw - 4rem);
     }
 
-    .header__nav-list li:not(:last-of-type) {
+    .header__nav-list div:not(:last-of-type) {
         margin: 2.2rem 2rem 0 2rem;
         padding-bottom: 2.4rem;
         border-bottom: 0.1rem solid #fff;
     }
 
-    .header__nav-list li:last-child {
+    .header__nav-list div:last-child {
         margin: 3.2rem 2rem;
         padding: 1.5rem 0;
         border-radius: 3.3rem;
@@ -253,13 +253,13 @@ ul {
         line-height: 1;
     }
 
-    .header__nav-list li:last-of-type a {
+    .header__nav-list div:last-of-type a {
         font-weight: 700;
     }
 }
 
 @media (min-width: 768px) {
-    .header__nav-list li:last-of-type a {
+    .header__nav-list div:last-of-type a {
         color: #fff;
     }
 
