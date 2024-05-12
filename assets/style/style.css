@@ -81,7 +81,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin: 2.1rem auto 1.8rem 1.6rem;
+    margin: 2.3rem auto 1.8rem 1.6rem;
     width: 16.7rem;
     font-size: 2.2rem;
     font-weight: 700;
@@ -294,7 +294,7 @@ span {
     background-size: cover;
     height: 25rem;
     margin-top: 7.0rem;
-    padding: 3.4rem 18.4rem 3.4rem 1.6rem;
+    padding: 3.2rem 18.4rem 3.4rem 1.6rem;
 }
 
 @media (min-width: 768px) {
@@ -319,7 +319,7 @@ span {
 .cover__inner {
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: 1.9rem;
 }
 
 @media (min-width: 768px) {
@@ -506,8 +506,7 @@ span {
 
 /* ---------- 選ばれる3つの理由 ---------- */
 .reason {
-    /* margin: 3.4rem 1.6rem 3.3rem; */
-    margin: 2.4rem 1.6rem 3.6rem;
+    margin: 3.4rem 1.6rem;
 }
 
 @media (min-width: 768px) {
@@ -596,7 +595,7 @@ span {
 
 .point__no {
     font-family: "Poppins", sans-serif;
-    margin-top: 0.8rem;
+    margin-top: 0.4rem;
     font-size: 2.4rem;
     font-weight: 700;
     font-style: italic;
@@ -639,9 +638,9 @@ span {
 }
 
 .point__summary {
+    margin-top: 0.1rem;
     font-size: 2rem;
     font-weight: 700;
-    line-height: 1.7;
 }
 
 @media (min-width: 768px) {
@@ -654,9 +653,9 @@ span {
 
 .point__summary--secondary,
 .point__summary--tertiary {
-    margin-top: 0.5rem;
-    margin-bottom: 0.3rem;
-    line-height: 1.34;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    line-height: 1.4;
 }
 
 @media (min-width: 768px) {
@@ -670,7 +669,7 @@ span {
 }
 
 .point__text {
-    margin-top: 0.8rem;
+    margin-top: 0.7rem;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
