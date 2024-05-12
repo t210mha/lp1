@@ -288,7 +288,6 @@ ul {
 }
 
 /* ---------- 部品 ---------- */
-/* span */
 span {
     display: inline-block;
 }
@@ -893,6 +892,7 @@ span {
 
 .tab__menu:hover {
     opacity: 0.75;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
