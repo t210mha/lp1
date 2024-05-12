@@ -60,8 +60,7 @@
 
             <!-- カバー -->
             <div class="cover">
-                <div class="cover__img"></div>
-                <div class="cover__result">
+                <div class="cover__inner">
                     <div class="cover__result-wrapper">
                         <img class="cover__result-frame" src="/assets/image/frame_left_01.png" alt="">
                         <div class="cover__result-detail">
@@ -70,10 +69,10 @@
                         </div>
                         <img class="cover__result-frame" src="/assets/image/frame_right_01.png" alt="">
                     </div>
-                </div>
-                <div class="cover__title-list">
-                    <div class="cover__title-item"><span>現役高校生・高卒生</span></div>
-                    <div class="cover__title-item--large"><span>入学説明会の</span><span>お申し込み開始</span></div>
+                    <div class="cover__info">
+                        <div class="cover__announce"><span>現役高校生・高卒生</span></div>
+                        <div class="cover__announce--large"><span>入学説明会の</span><span>お申し込み開始</span></div>
+                    </div>
                 </div>
             </div>
 
@@ -89,12 +88,10 @@
                 <h2 class="reason__title">選ばれる<span class="reason__title--large">3</span>つの理由</h2>
                 <div class="reason__list">
                     <div class="reason__item point">
-                        <div class="point__img">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="/assets/image/reason_pc_01.jpg" alt="">
-                                <img src="/assets/image/reason_sp_01.jpg" alt="">
-                            </picture>
-                        </div>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="/assets/image/reason_pc_01.jpg" alt="">
+                            <img src="/assets/image/reason_sp_01.jpg" class="point__img" alt="">
+                        </picture>
                         <div class="point__info">
                             <div class="point__no">Point<span class="point__no point__no--large">1</span></div>
                             <div class="point__summary">実績のある講師陣だから安心</div>
@@ -104,12 +101,10 @@
                         </div>
                     </div>
                     <div class="reason__item point--reverse">
-                        <div class="point__img">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="/assets/image/reason_pc_02.jpg" alt="">
-                                <img src="/assets/image/reason_sp_02.jpg" alt="">
-                            </picture>
-                        </div>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="/assets/image/reason_pc_02.jpg" alt="">
+                            <img src="/assets/image/reason_sp_02.jpg" class="point__img" alt="">
+                        </picture>
                         <div class="point__info">
                             <div class="point__no">Point<span class="point__no point__no--large">2</span></div>
                             <div class="point__summary point__summary--secondary">オンラインにも対応だから、早送り巻き戻し視聴できる。</div>
@@ -119,12 +114,10 @@
                         </div>
                     </div>
                     <div class="reason__item reason__item--last point">
-                        <div class="point__img">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="/assets/image/reason_pc_03.jpg" alt="">
-                                <img src="/assets/image/reason_sp_03.jpg" alt="">
-                            </picture>
-                        </div>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="/assets/image/reason_pc_03.jpg" alt="">
+                            <img src="/assets/image/reason_sp_03.jpg" class="point__img" alt="">
+                        </picture>
                         <div class="point__info">
                             <div class="point__no">Point<span class="point__no point__no--large">3</span></div>
                             <div class="point__summary point__summary--tertiary">徹底した個別指導で、弱点を残さずそれぞれに合わせた大学受験対策。</div>
@@ -359,23 +352,20 @@
         <footer class="footer">
             <!-- リンク -->
             <div class="footer__link">
-                <div class="footer__list">
-                    <div class="footer__item"><a class="footer__img" href="/faq">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="/assets/image/footer_qa_pc_01.jpg" alt="">
-                                <img class=".footer__img--small" src="/assets/image/footer_qa_sp_01.jpg" alt="">
-                            </picture>
-                            <p class="footer__img-text">よくあるご質問</p>
-                        </a></div>
-                    <div class="footer__item"><a class="footer__img" href="/search">
-                            <picture>
-                                <source media="(min-width: 768px)" srcset="/assets/image/footer_classroom_pc_01.jpg" alt="">
-                                <img src="/assets/image/footer_classroom_sp_01.jpg" alt="">
-                            </picture>
-                            <p class="footer__img-text">お近くの教室を探す</p>
-                        </a>
-                    </div>
-                </div>
+                <a class="footer__link-inner" href="/faq">
+                    <picture>
+                        <source media="(max-width: 767.9px) 100vw" srcset="/assets/image/footer_qa_sp_01.jpg" alt="">
+                        <img src="/assets/image/footer_qa_pc_01.jpg" class="footer__link-img" alt="">
+                    </picture>
+                    <p class="footer__link-text">よくあるご質問</p>
+                </a>
+                <a class="footer__link-inner" href="/search">
+                    <picture>
+                        <source media="(min-width: 767.9px) 100vw" srcset="/assets/image/footer_classroom_sp_01.jpg" alt="">
+                        <img src="/assets/image/footer_classroom_pc_01.jpg" class="footer__link-img" alt="">
+                    </picture>
+                    <p class="footer__link-text">お近くの教室を探す</p>
+                </a>
             </div>
             <!-- コピーライト -->
             <div class="footer__copyright">
