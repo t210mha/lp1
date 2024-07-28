@@ -754,34 +754,65 @@ span {
     }
 }
 
-.inquiry__button-entry {
+.inquiry__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1.6rem;
+    width: 30.5rem;
     margin: 0 auto;
-    padding: 1.7rem 5.25rem;
+}
+
+@media (min-width: 768px) {
+    .inquiry__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 4rem;
+        margin: 0 auto;
+        width: 76.8rem;
+    }
+}
+
+.inquiry__button {
+    width: 100%;
+    padding: 1.7rem 0;
     font-size: 2rem;
     font-weight: 700;
     color: #fff;
+    border-radius: 3.5rem;
+    text-align: center;
+}
+
+.inquiry__button:hover {
+    opacity: 0.75;
+    transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+    .inquiry__button {
+        width: 36rem;
+        padding: 1.9rem 0 2.1rem 0rem;
+        font-size: 2.4rem;
+        border-radius: 3.7rem;
+        line-height: 1.5;
+    }
+}
+
+.inquiry__button--entry {
     background: -moz-linear-gradient(left,
             #0271E0, #53A2F0);
     background: -webkit-linear-gradient(left,
             #0271E0, #53A2F0);
     background: linear-gradient(to right,
             #0271E0, #53A2F0);
-    border-radius: 3.5rem;
-    text-align: center;
+
 }
 
-.inquiry__button-entry:hover {
-    opacity: 0.75;
-    transition: all 0.3s;
-}
-
-@media (min-width: 768px) {
-    .inquiry__button-entry {
-        padding: 1.9rem 4.8rem 2.1rem 7.1rem;
-        font-size: 2.4rem;
-        border-radius: 3.7rem;
-        line-height: 1.5;
-    }
+.inquiry__button--freetrial {
+    background-color: #F6AA00;
 }
 
 /* ---------- コース・目的 ---------- */
@@ -954,6 +985,7 @@ input[name="tab__menu"] {
         opacity: 0.75;
     }
 }
+
 .course__tab-text {
     display: flex;
     flex-direction: row;
@@ -1192,7 +1224,7 @@ input[name="tab__menu"] {
 }
 
 .footer__link-inner {
-    width: 37.5rem;
+    width: 100%;
     height: 17rem;
     overflow: hidden;
     display: flex;
@@ -1211,7 +1243,7 @@ input[name="tab__menu"] {
 }
 
 .footer__link-picture {
-    width: 37.5rem;
+    width: 100%;
     height: 17rem;
 }
 
